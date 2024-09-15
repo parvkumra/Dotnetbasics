@@ -37,4 +37,7 @@ app.MapPut("/games/{id}",(int id,UpdateGameDto uggame)=>{
   );
   return Results.NoContent();
 });
+app.MapDelete("/games/{id}",(int id)=>{
+  games.RemoveAll(game=>game.Id==id);
+});
 app.Run();
