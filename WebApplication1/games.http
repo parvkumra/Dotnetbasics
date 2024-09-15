@@ -21,3 +21,7 @@ Content-Type: application/json
   "Price": 54.6,
   "ReleaseDate": "2016-11-12"
 }
+
+
+###
+DELETE http://localhost:5210/games/1
