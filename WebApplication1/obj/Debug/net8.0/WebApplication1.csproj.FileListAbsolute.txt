@@ -48,3 +48,4 @@
 /Users/parvkumra/Desktop/CS/Jaipur/dotnet/WebApplication1/obj/Debug/net8.0/WebApplication1.pdb
 /Users/parvkumra/Desktop/CS/Jaipur/dotnet/WebApplication1/obj/Debug/net8.0/WebApplication1.genruntimeconfig.cache
 /Users/parvkumra/Desktop/CS/Jaipur/dotnet/WebApplication1/obj/Debug/net8.0/ref/WebApplication1.dll
+/Users/parvkumra/Desktop/CS/Jaipur/dotnet/WebApplication1/obj/Debug/net8.0/WebApplication1.sourcelink.json

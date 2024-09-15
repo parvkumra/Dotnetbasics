@@ -25,4 +25,16 @@ app.MapPost("/gamesi",(CreateGameDto newgame)=>{
   games.Add(game);
   return Results.CreatedAtRoute("Getgame",new {id= game.Id},game);
 });
+
+app.MapPut("/games/{id}",(int id,UpdateGameDto uggame)=>{
+  var index=games.FindIndex(game=>game.Id==id);
+  games[index]=new GameDto(
+      id,
+      uggame.Name,
+      uggame.Genre,
+      uggame.Price,
+      uggame.ReleaseDate
+  );
+  return Results.NoContent();
+});
 app.Run();

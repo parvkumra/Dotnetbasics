@@ -11,3 +11,13 @@ Content-Type: application/json
   "price": 54.6,
   "releaseDate": "2016-11-12"
 }
+
+###
+PUT http://localhost:5210/games/6
+Content-Type: application/json
+{
+  "Name":"ParvSGame",
+  "Genre":"Arcade",
+  "Price": 54.6,
+  "ReleaseDate": "2016-11-12"
+}
