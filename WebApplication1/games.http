@@ -1,0 +1,13 @@
+GET http://localhost:5210/games/2
+
+###
+
+POST http://localhost:5210/gamesi 
+Content-Type: application/json
+
+{
+  "name":"ParvGame",
+  "genre":"Action",
+  "price": 54.6,
+  "releaseDate": "2016-11-12"
+}
