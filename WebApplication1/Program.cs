@@ -11,8 +11,13 @@ List<GameDto> games=[
             new (5, "Animal Crossing: New Horizons", "Simulation", 59.99m, new DateOnly(2020, 3, 20))
 ];
 app.MapGet("/games", () => games);
-app.MapGet("/games/{id}",(int id)=>games.Find(game=>game.Id==id))
- .WithName("Getgame");
+app.MapGet("/games/{id}",(int id)=>{
+  
+  GameDto? game=games.Find(game=>game.Id==id);
+
+  return game is null?Results.NotFound():Results.Ok(game);
+
+}).WithName("Getgame");
 app.MapPost("/gamesi",(CreateGameDto newgame)=>{
   GameDto game=new(
     games.Count+1,
