@@ -33,6 +33,7 @@ app.MapPost("/gamesi",(CreateGameDto newgame)=>{
 
 app.MapPut("/games/{id}",(int id,UpdateGameDto uggame)=>{
   var index=games.FindIndex(game=>game.Id==id);
+  if(index==-1)return Results.NotFound();
   games[index]=new GameDto(
       id,
       uggame.Name,
