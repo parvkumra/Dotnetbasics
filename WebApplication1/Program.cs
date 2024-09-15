@@ -10,9 +10,9 @@ List<GameDto> games=[
             new (4, "Cyberpunk 2077", "RPG", 59.99m, new DateOnly(2020, 12, 10)),
             new (5, "Animal Crossing: New Horizons", "Simulation", 59.99m, new DateOnly(2020, 3, 20))
 ];
-app.MapGet("/games", () => games);
+app.MapGet("/gamesi", () => games);
 app.MapGet("/games/{id}",(int id)=>{
-  
+
   GameDto? game=games.Find(game=>game.Id==id);
 
   return game is null?Results.NotFound():Results.Ok(game);
