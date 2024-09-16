@@ -1,2 +1,2 @@
 
-#Dotnet Basics (c#)
+#Dotnet Basics (C#)
